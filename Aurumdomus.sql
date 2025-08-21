@@ -43,6 +43,7 @@ CREATE TABLE Tables (
     TableID INT AUTO_INCREMENT PRIMARY KEY,
     TableName VARCHAR(255) NOT NULL,
     TableStatus ENUM('Vacant', 'Occupied') NOT NULL,
+    TableImage VARCHAR(255),
     FOREIGN KEY (UnitID) REFERENCES Unit(UnitID)
 );
 
