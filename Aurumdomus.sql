@@ -13,6 +13,7 @@ CREATE TABLE Registration (
     RegType ENUM('Manager', 'Customer', 'Chef', 'Waiter', 'Janitor') NOT NULL,
     dLocation VARCHAR(255),
     accStatus ENUM('Pending', 'Approved', 'Inactive') DEFAULT 'Pending',
+    image VARCHAR(255)
     lastAccessed TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
 
